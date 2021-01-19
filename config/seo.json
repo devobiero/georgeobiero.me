@@ -1,0 +1,15 @@
+{
+  "siteMetadata": {
+    "title": "Musings",
+    "author": {
+      "name": "George Obiero",
+      "summary": "who works on data intensive applications and improving developer experiences"
+    },
+    "description": "A catalog of my journey as a Software Engineer",
+    "siteUrl": "georgeobiero.me",
+    "language": "en-US",
+    "social": {
+      "twitter": "Obiero_Ogada"
+    }
+  }
+}
