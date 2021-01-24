@@ -26,7 +26,7 @@ const Header = () => {
 
   useEffect(() => setMounted(true), []);
 
-  const toggleDarkMode = (checked) => {
+  const toggleDarkMode = checked => {
     const isDarkMode = checked;
 
     if (isDarkMode) setTheme("dark");
@@ -40,7 +40,7 @@ const Header = () => {
     <header
       className={clsx("flex items-center justify-between ", {
         "mb-8": isRoot,
-        "mb-2": !isRoot,
+        "mb-2": !isRoot
       })}
     >
       <div className={"max-w-md"}>

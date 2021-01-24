@@ -5,9 +5,9 @@ export function getPostsFolders() {
   // Get all posts folders located in `content/posts`
   const postsFolders = fs
     .readdirSync(`${process.cwd()}/content/posts`)
-    .map((folderName) => ({
+    .map(folderName => ({
       directory: folderName,
-      filename: `${folderName}.md`,
+      filename: `${folderName}.md`
     }));
 
   return postsFolders;
@@ -36,7 +36,7 @@ export function getSortedPosts() {
 
       const frontmatter = {
         ...data,
-        date: getFormattedDate(data.date),
+        date: getFormattedDate(data.date)
       };
 
       // Remove .md file extension from post name
@@ -46,7 +46,7 @@ export function getSortedPosts() {
         slug,
         frontmatter,
         excerpt,
-        content,
+        content
       };
     })
     .sort(
@@ -61,8 +61,8 @@ export function getPostsSlugs() {
 
   const paths = postFolders.map(({ filename }) => ({
     params: {
-      slug: filename.replace(".md", ""),
-    },
+      slug: filename.replace(".md", "")
+    }
   }));
 
   return paths;

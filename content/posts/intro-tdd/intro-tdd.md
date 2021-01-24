@@ -1,6 +1,6 @@
 ---
-title: Introduction to test driven development (TDD)
-description: The first post is the most memorable one.
+title: Introduction to test-driven development (TDD) (Part 1)
+description: Is it right for my development workflow?
 date: 2017-10-21T11:00:00.000Z
 ---
 
@@ -109,6 +109,8 @@ class PasswordValidator {
 We run all the tests again. All the tests are green as shown below:
 
 ![Test](tdd-pass-2.png)
+
+> Initially posted at https://obiero-ogada.medium.com
 
 #### Summary
 
